@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jan 23 19:06:05 EET 2019","Wed Jan 23 19:06:24 EET 2019","18739","Manage account","Authorization","epam.cdp.tests.AuthorizationTest","epam.cdp.tests.AuthorizationTest","userShouldBeAbleToLogin","Verify user is able to login",""
+"unknown","Wed Jan 23 19:06:03 EET 2019","Wed Jan 23 19:06:03 EET 2019","7","Manage account","Authorization","epam.cdp.tests.AuthorizationTest","epam.cdp.tests.AuthorizationTest","userShouldBeAbleToLogout","Verify user is able to logout",""
+"unknown","Wed Jan 23 19:06:03 EET 2019","Wed Jan 23 19:06:03 EET 2019","1","Manage account","Authorization","epam.cdp.tests.AuthorizationTest","epam.cdp.tests.AuthorizationTest","testShouldBeFailed","Verify failed test case",""

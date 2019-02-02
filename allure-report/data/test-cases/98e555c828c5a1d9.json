@@ -1,0 +1,67 @@
+{
+  "uid" : "98e555c828c5a1d9",
+  "name" : "Verify user is able to logout",
+  "fullName" : "epam.cdp.tests.AuthorizationTest.userShouldBeAbleToLogout",
+  "historyId" : "8e69f40dda4d93fef1872cae267a4dd5",
+  "time" : {
+    "start" : 1548263163695,
+    "stop" : 1548263163702,
+    "duration" : 7
+  },
+  "status" : "unknown",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "epam.cdp.tests.AuthorizationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "epam.cdp.tests.AuthorizationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "userShouldBeAbleToLogout"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Manage account"
+  }, {
+    "name" : "suite",
+    "value" : "Authorization"
+  }, {
+    "name" : "subSuite",
+    "value" : "epam.cdp.tests.AuthorizationTest"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0637"
+  }, {
+    "name" : "thread",
+    "value" : "10516@EPUALVIW0637.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "login",
+    "value" : "test.selenium.yakush@gmail.com"
+  }, {
+    "name" : "password",
+    "value" : "testyakush"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "98e555c828c5a1d9.json",
+  "parameterValues" : [ "test.selenium.yakush@gmail.com", "testyakush" ]
+}

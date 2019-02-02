@@ -1,0 +1,121 @@
+{
+  "uid" : "81c8f39f7bdb7310",
+  "name" : "Verify user is able to login",
+  "fullName" : "epam.cdp.tests.AuthorizationTest.userShouldBeAbleToLogin",
+  "historyId" : "f0d908862d5d78e81d682180c7d9079a",
+  "time" : {
+    "start" : 1548263165710,
+    "stop" : 1548263184449,
+    "duration" : 18739
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "initWebDriver",
+    "time" : {
+      "start" : 1548263164099,
+      "stop" : 1548263165628,
+      "duration" : 1529
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "clearSession",
+    "time" : {
+      "start" : 1548263184457,
+      "stop" : 1548263186384,
+      "duration" : 1927
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1548263186471,
+      "stop" : 1548263187872,
+      "duration" : 1401
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "epam.cdp.tests.AuthorizationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "epam.cdp.tests.AuthorizationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "userShouldBeAbleToLogin"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Manage account"
+  }, {
+    "name" : "suite",
+    "value" : "Authorization"
+  }, {
+    "name" : "subSuite",
+    "value" : "epam.cdp.tests.AuthorizationTest"
+  }, {
+    "name" : "host",
+    "value" : "EPUALVIW0637"
+  }, {
+    "name" : "thread",
+    "value" : "10516@EPUALVIW0637.TestNG-test=Authorization-1(23)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "test.selenium.yakush@gmail.com"
+  }, {
+    "name" : "arg1",
+    "value" : "testyakush"
+  }, {
+    "name" : "login",
+    "value" : "test.selenium.yakush@gmail.com"
+  }, {
+    "name" : "password",
+    "value" : "testyakush"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "81c8f39f7bdb7310.json",
+  "parameterValues" : [ "test.selenium.yakush@gmail.com", "testyakush", "test.selenium.yakush@gmail.com", "testyakush" ]
+}

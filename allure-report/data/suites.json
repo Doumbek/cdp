@@ -1,0 +1,53 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Manage account",
+    "children" : [ {
+      "name" : "Authorization",
+      "children" : [ {
+        "name" : "epam.cdp.tests.AuthorizationTest",
+        "children" : [ {
+          "name" : "Verify user is able to logout",
+          "uid" : "98e555c828c5a1d9",
+          "parentUid" : "a5df8f06bd37c98d6f328e0dd68d3786",
+          "status" : "unknown",
+          "time" : {
+            "start" : 1548263163695,
+            "stop" : 1548263163702,
+            "duration" : 7
+          },
+          "flaky" : false,
+          "parameters" : [ "test.selenium.yakush@gmail.com", "testyakush" ]
+        }, {
+          "name" : "Verify failed test case",
+          "uid" : "5c38fda783277d19",
+          "parentUid" : "a5df8f06bd37c98d6f328e0dd68d3786",
+          "status" : "unknown",
+          "time" : {
+            "start" : 1548263163980,
+            "stop" : 1548263163981,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "parameters" : [ "test.selenium.yakush@gmail.com", "testyakush" ]
+        }, {
+          "name" : "Verify user is able to login",
+          "uid" : "81c8f39f7bdb7310",
+          "parentUid" : "a5df8f06bd37c98d6f328e0dd68d3786",
+          "status" : "passed",
+          "time" : {
+            "start" : 1548263165710,
+            "stop" : 1548263184449,
+            "duration" : 18739
+          },
+          "flaky" : false,
+          "parameters" : [ "test.selenium.yakush@gmail.com", "testyakush", "test.selenium.yakush@gmail.com", "testyakush" ]
+        } ],
+        "uid" : "a5df8f06bd37c98d6f328e0dd68d3786"
+      } ],
+      "uid" : "bcca851c3896a577e4d6d84d3401d170"
+    } ],
+    "uid" : "e7cb9b76bded22c4e4df5a049b842653"
+  } ]
+}

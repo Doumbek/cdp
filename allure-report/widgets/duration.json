@@ -1,0 +1,31 @@
+[ {
+  "uid" : "81c8f39f7bdb7310",
+  "name" : "Verify user is able to login",
+  "time" : {
+    "start" : 1548263165710,
+    "stop" : 1548263184449,
+    "duration" : 18739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98e555c828c5a1d9",
+  "name" : "Verify user is able to logout",
+  "time" : {
+    "start" : 1548263163695,
+    "stop" : 1548263163702,
+    "duration" : 7
+  },
+  "status" : "unknown",
+  "severity" : "normal"
+}, {
+  "uid" : "5c38fda783277d19",
+  "name" : "Verify failed test case",
+  "time" : {
+    "start" : 1548263163980,
+    "stop" : 1548263163981,
+    "duration" : 1
+  },
+  "status" : "unknown",
+  "severity" : "normal"
+} ]

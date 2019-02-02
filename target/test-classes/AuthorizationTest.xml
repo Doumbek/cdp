@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Manage account" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="epam.cdp.listeners.TestNgStepListener"/>
+        <listener class-name="org.testng.reporters.jq.Main"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+    </listeners>
+    <parameter name="login" value="test.selenium.yakush@gmail.com"/>
+    <parameter name="password" value="testyakush"/>
+    <test name="Authorization">
+        <classes>
+            <class name="epam.cdp.tests.AuthorizationTest" />
+        </classes>
+    </test>
+</suite>
