@@ -8,7 +8,11 @@ public interface WebDriverManager {
 
     void maximize();
 
+    void refresh();
+
     void deleteAllCookies();
+
+    void dismiss(WebDriver driver);
 
     void dismissAll();
 }

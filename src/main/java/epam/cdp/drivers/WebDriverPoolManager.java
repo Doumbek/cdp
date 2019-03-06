@@ -24,8 +24,18 @@ public class WebDriverPoolManager implements WebDriverManager {
     }
 
     @Override
+    public void refresh() {
+        getDriver().navigate().refresh();
+    }
+
+    @Override
     public void deleteAllCookies() {
         getDriver().manage().deleteAllCookies();
+    }
+
+    @Override
+    public void dismiss(final WebDriver driver) {
+        webDriverPool.dismissDriver(getDriver());
     }
 
     @Override

@@ -1,9 +1,9 @@
 package epam.cdp.panels;
 
-import org.openqa.selenium.WebDriver;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.google.inject.Inject;
 
@@ -23,12 +23,11 @@ public class LoginPanel extends AbstractPanel {
     }
 
     public void setLogin(final String login) {
-        waitFor(ExpectedConditions.visibilityOf(loginInput));
-        loginInput.sendKeys(login);
+        waitFor(visibilityOf(loginInput)).sendKeys(login);
     }
 
     public void clickNextButton() {
-        nextButton.click();
+        waitFor(visibilityOf(nextButton)).click();
     }
 
 }

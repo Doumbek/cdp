@@ -1,30 +1,29 @@
 package epam.cdp.tests;
 
-import org.testng.ITest;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 import com.google.inject.Inject;
 
 import epam.cdp.drivers.WebDriverManager;
+import epam.cdp.factories.PageFactory;
 
 /**
  * Base class for TestNG-based test classes
  */
-public class GmailTestBase {
+public abstract class AbstractTest {
 
     @Inject
     private WebDriverManager driverManager;
 
     @BeforeMethod
-    public void initWebDriver() {
-        getDriverManager().maximize();
+    public void initElements() {
+        PageFactory.init(this);
     }
 
-    @AfterMethod
-    public void clearSession() {
-        getDriverManager().deleteAllCookies();
+    @BeforeMethod
+    public void initWebDriver() {
+        getDriverManager().maximize();
     }
 
     @AfterSuite(alwaysRun = true)
@@ -35,5 +34,6 @@ public class GmailTestBase {
     protected WebDriverManager getDriverManager() {
         return this.driverManager;
     }
+
 
 }

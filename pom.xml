@@ -10,7 +10,7 @@
         <testng.version>6.14.2</testng.version>
         <webdriver.factory>4.3</webdriver.factory>
         <selenium.version>3.11.0</selenium.version>
-        <chrome.driver.version>2.45</chrome.driver.version>
+        <chrome.driver.version>2.46</chrome.driver.version>
         <gecko.driver.version>v0.19.1</gecko.driver.version>
         <htmlunit.driver>2.29.2</htmlunit.driver>
         <phantomjsd.driver>1.4.4</phantomjsd.driver>

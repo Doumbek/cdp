@@ -60,13 +60,12 @@ public abstract class AbstractPage {
 
     public void open() {
         getDriver().get(this.baseUrl);
+        waitForPageIsLoaded();
     }
 
     public void openNewSession() {
-        open();
         getDriverManager().deleteAllCookies();
-        getDriver().navigate().refresh();
-        waitForPageIsLoaded();
+        open();
     }
 
     public void waitForPageIsLoaded() {

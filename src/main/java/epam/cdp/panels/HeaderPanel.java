@@ -1,9 +1,7 @@
 package epam.cdp.panels;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -21,8 +19,8 @@ public class HeaderPanel extends AbstractPanel {
         super(driverManager);
     }
 
-    public boolean isAccountLinkPresented() {
-        return waitFor(visibilityOf(accountLink)).isDisplayed();
+    public boolean isAccountLinkVisible() {
+        return isPresent(accountLink);
     }
 
     public void clickAccountLink() {

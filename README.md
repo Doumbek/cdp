@@ -1,2 +1,3 @@
 mvn clean test
-allure serve target/allure-results -o -c allure-report
+allure generate target/allure-results -o allure-report --clean
+allure open

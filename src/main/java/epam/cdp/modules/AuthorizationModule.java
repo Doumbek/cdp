@@ -14,8 +14,8 @@ public class AuthorizationModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(WebDriverManager.class).toProvider(WebDriverPoolManagerProvider.class).in(Scopes.SINGLETON);
-        bind(WebDriverPool.class).toProvider(SingleWebDriveProvider.class);
-//        bind(WebDriverPool.class).toProvider(ThreadLocalWebDriveProvider.class);
+//        bind(WebDriverPool.class).toProvider(SingleWebDriveProvider.class);
+        bind(WebDriverPool.class).toProvider(ThreadLocalWebDriveProvider.class);
     }
 
 }
