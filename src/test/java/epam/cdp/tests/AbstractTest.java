@@ -17,12 +17,8 @@ public abstract class AbstractTest {
     private WebDriverManager driverManager;
 
     @BeforeMethod
-    public void initElements() {
-        PageFactory.init(this);
-    }
-
-    @BeforeMethod
     public void initWebDriver() {
+        PageFactory.init(this);
         getDriverManager().maximize();
     }
 

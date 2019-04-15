@@ -10,7 +10,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-import epam.cdp.SuiteConfiguration;
 import epam.cdp.drivers.WebDriverManager;
 
 /**
@@ -42,7 +41,7 @@ public abstract class AbstractPage {
     private void initBaseUrl() {
         baseUrl = Optional.ofNullable(getBaseUrl())
             .map(baseUrl -> updateUrlWithPagePath(baseUrl, this.getClass()))
-            .orElse(SuiteConfiguration.getInstance().getProperty("gmail.default.url"));
+            .orElseThrow(IllegalStateException::new);
     }
 
     private String updateUrlWithPagePath(String baseUrl, Class<? extends AbstractPage> type) {

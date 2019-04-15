@@ -2,14 +2,15 @@ package epam.cdp.panels;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.google.inject.Inject;
 
 import epam.cdp.drivers.WebDriverManager;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class PasswordPanel extends AbstractPanel {
 
     @FindBy(xpath = "//input[@type='password']")
@@ -23,11 +24,9 @@ public class PasswordPanel extends AbstractPanel {
         super(driverManager);
     }
 
-    public boolean isPasswordInputDisplayed() {
-        return waitFor(visibilityOf(passwordInput)).isDisplayed();
-    }
-
     public void setPassword(final String password) {
+        log.info("Set password {}", password);
+        log.info("Current Thread is [{}]", Thread.currentThread().getName());
         waitFor(visibilityOf(passwordInput)).sendKeys(password);
     }
 

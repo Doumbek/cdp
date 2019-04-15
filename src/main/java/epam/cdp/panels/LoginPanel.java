@@ -8,7 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import com.google.inject.Inject;
 
 import epam.cdp.drivers.WebDriverManager;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class LoginPanel extends AbstractPanel {
 
     @FindBy(xpath = "//input[@type='email']")
@@ -23,6 +25,9 @@ public class LoginPanel extends AbstractPanel {
     }
 
     public void setLogin(final String login) {
+        log.info("Set login {}", login);
+        log.info("Current Thread is [{}], Current Driver is [{}]", Thread.currentThread().getName(),
+            getDriver().toString());
         waitFor(visibilityOf(loginInput)).sendKeys(login);
     }
 

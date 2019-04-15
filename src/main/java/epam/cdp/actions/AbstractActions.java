@@ -1,9 +1,10 @@
 package epam.cdp.actions;
 
-import epam.cdp.drivers.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 
-abstract public class AbstractActions {
+import epam.cdp.drivers.WebDriverManager;
+
+public abstract class AbstractActions {
 
     private WebDriverManager driverManager;
 
