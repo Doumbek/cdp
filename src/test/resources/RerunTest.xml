@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Rerun suite">
+    <listeners>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+    <test name="Rerun test scope">
+        <classes>
+            <class name="rerun.tests.PositiveTests"/>
+            <class name="rerun.tests.OneToOneTests"/>
+            <class name="rerun.tests.NegativeTests"/>
+        </classes>
+    </test>
+</suite>
