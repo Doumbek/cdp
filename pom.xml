@@ -24,6 +24,7 @@
         <log4j2.version>2.11.1</log4j2.version>
         <allure.testng.version>2.9.0</allure.testng.version>
         <aspectj.version>1.9.2</aspectj.version>
+        <groovy.version>2.5.7</groovy.version>
     </properties>
 
     <dependencies>
@@ -82,6 +83,11 @@
             <artifactId>allure-testng</artifactId>
             <version>${allure.testng.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>${groovy.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <resources>
@@ -110,7 +116,8 @@
                 <version>${surefire.version}</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/AuthorizationTest.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>src/test/resources/AuthorizationTest.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/test/resources/RerunTest.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemPropertyVariables>
                         <application.properties>/application.properties</application.properties>
