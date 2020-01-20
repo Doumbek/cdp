@@ -10,9 +10,11 @@ public class Example {
 
         final CarComponentsFactory cheapComponentsFactory = new CheapCarComponentFactory();
         final CarComponentsFactory expensiveComponentsFactory = new ExpensiveCarComponentFactory();
+        final CarComponentsFactory electricComponentsFactory = new ElectricCarComponentFactory();
 
         final Car cheapCar = new Car(cheapComponentsFactory);
         final Car expensiveCar = new Car(expensiveComponentsFactory);
+        final Car electricCar = new Car(electricComponentsFactory);
 
         cheapCar.startEngine();
         cheapCar.turnOnHeadlight();
@@ -21,6 +23,11 @@ public class Example {
 
         expensiveCar.startEngine();
         expensiveCar.turnOnHeadlight();
+
+
+        System.out.println("======================");
+        electricCar.startEngine();
+        electricCar.turnOnHeadlight();
 
     }
 
