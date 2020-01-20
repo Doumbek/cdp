@@ -1,9 +1,5 @@
 package patterns.behavioral.observer;
 
-import patterns.behavioral.strategy.Fly;
-import patterns.behavioral.strategy.Sail;
-import patterns.behavioral.strategy.Transport;
-
 public class Example {
 
     public static void main(String[] args) {
@@ -13,10 +9,12 @@ public class Example {
         final DateListener ukrDateListener = new UkraineDateListener(instantProvider);
         final DateListener parisDateListener = new ParisDateListener(instantProvider);
 
-        final Thread timerThread = new Thread(new Timer(instantProvider));
+        Timer timer = new Timer(instantProvider);
+        timer.run();
 
-        timerThread.start();
-        
+        instantProvider.remove(parisDateListener);
+        timer.run();
+
     }
 
 }

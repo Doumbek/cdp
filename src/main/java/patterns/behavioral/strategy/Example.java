@@ -1,14 +1,22 @@
 package patterns.behavioral.strategy;
 
+import java.util.Scanner;
+
 public class Example {
 
     public static void main(String[] args) {
 
-        final Transport boat = new Transport(new Sail());
-        final Transport plane = new Transport(new Fly());
+        final Washer washer = new Washer();
 
-        boat.move();
-        plane.move();
+        final Scanner scanner = new Scanner(System.in);
+        System.out.println("Select washer program:");
+        System.out.println("1 - wash silk");
+        System.out.println("2 - wash cotton");
+
+        final Integer programIndex = scanner.nextInt();
+
+        washer.setCurrentProgram(programIndex);
+        washer.wash();
 
     }
 
